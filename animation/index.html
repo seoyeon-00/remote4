@@ -1,0 +1,96 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>animation 개인 실습</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section id="transform">
+                <h2>Transform : 오브젝트 크기나 각도 위치 변동</h2>
+                <div class="practice-box clear">
+                    <div>
+                        <p class="p1">1 rotate, translate</p>
+                        <p class="p2">translate 먼저 진행 이후 rotate 진행한다. x축, y축 100,100 이동 이후 처음 위치의 transform-origin:50% 50%; 기준점에서 45도 틀어지는 원리
+                        </p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">2 translate, rotate</p>
+                        <p class="p2">rotate 먼저 진행 후 translate 진행</p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">3 skew</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">4 scale</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">5 scale skew</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">6 skew rotate</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="transition">
+                <h2>Transition :: 변화의 과정을 보여주고 싶을 때 사용</h2>
+                <div class="practice-box clear">
+                    <div>
+                        <p class="p1">1 rotate, translate</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">2 translate, rotate</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                    <div>
+                        <p class="p1">3 width, height</p>
+                        <p class="p2"></p>
+                        <div class="object">hover</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="animation">
+                <h2>Animation :: 오브젝트에 움직임을 줄 수 있다. 조건 상관 없이 움직임 가능!</h2>
+                <div class="practice-box clear">
+                    <div>
+                        <p class="p1">1 moving color</p>
+                        <p class="p2"></p>
+                        <div class="object">안녕!</div>
+                    </div>
+                    <div>
+                        <p class="p1">2 transform 속성 중첩</p>
+                        <p class="p2">이미 애니메이션 transform으로 움직임과 컬러를 넣어줬는데 추가로 진동기능을 넣고 싶어요</p>
+                        <p style="display:none;">한 요소에 같은 속성에 대한 애니메이션은 추가할 수 없음. transform을 수정하는 애니메이션이
+                        있는데 또 transform에 대한 애니메이션은 한 요소안에서 중복 불가 그렇기 때문에 그 요소 밖으로 div 태그로 감싸준 후
+                        감산 태그에 transform 애니메이션을 추가로 부여한다.</p>
+                        <div>
+                            <div class="object">동글</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p1">3 move, scale</p>
+                        <p class="p2"></p>
+                        <div class="object">😄</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
